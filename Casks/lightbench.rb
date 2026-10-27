@@ -18,7 +18,7 @@ cask "lightbench" do
     end
   end
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "lightBench.app"
   binary "#{appdir}/lightBench.app/Contents/MacOS/lightbench"
