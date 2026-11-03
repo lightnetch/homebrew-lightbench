@@ -2,9 +2,9 @@
 cask "lightbench" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.5.3-beta"
-  sha256 arm:   "fa3c80d07bdfe8cd4c2a4ed826fab1d80e1f548ea364d71f3bdc26a732eb201c",
-         intel: "61bfd8d9f047f37b86ad40637aaf2ac3deb9625bbcaf8af141b1c858afe557fe"
+  version "0.5.4-beta"
+  sha256 arm:   "982a51c19bbad9a5783b382f5dbaa8e32d8a61ca7eae8ab6015c3bcba9f10ecf",
+         intel: "890804cd472dab336163e1e8de2e7a31ac30951ba6bbd6ff4ab62b931e3f4a8d"
 
   url "https://lightbench.ch/dl/darwin-#{arch}?v=#{version}&via=brew"
   name "lightBench"
@@ -18,7 +18,7 @@ cask "lightbench" do
     end
   end
 
-  depends_on macos: :monterey
+  depends_on macos: ">= :monterey"
 
   app "lightBench.app"
   binary "#{appdir}/lightBench.app/Contents/MacOS/lightbench"
